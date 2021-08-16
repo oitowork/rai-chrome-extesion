@@ -1,6 +1,7 @@
 # Rai Chrome  Extesion 
 usd to RAI 
 
+<img width="304" alt="Screenshot 2021-08-16 at 20 16 39" src="https://user-images.githubusercontent.com/86640385/129640664-4d02c556-19a2-4349-bdca-e8670ef2db8f.png">
 
 
 ## Installing and Running
