@@ -17,10 +17,13 @@ import {
   Center,
   Spacer,
   SimpleGrid,
+  Button,
+  ButtonGroup,
 } from '@chakra-ui/react';
 import './Popup.css';
 import reflexerLogo from '../../assets/img/reflexer.finance.png';
 import reflexer from '../../assets/img/brand-white.svg';
+import { turnOFFToRAI, turnONToRAI } from '../Content/modules/print';
 
 const Popup = () => {
   return (
@@ -89,12 +92,22 @@ const Popup = () => {
                 className="switch"
                 size="lg"
                 colorScheme="#68D391"
+                onChange={turnOFFToRAI}
               />
             </Stack>
+
             <Spacer />
             <Stack align="center">
               <img src={reflexer} alt="Reflexer" width="70%"></img>
             </Stack>
+            <ButtonGroup>
+              <Button colorScheme="red" onClick={turnOFFToRAI}>
+                OFF
+              </Button>
+              <Button colorScheme="green" onClick={turnONToRAI}>
+                ON
+              </Button>
+            </ButtonGroup>
           </Box>
         </VStack>
       </Flex>
