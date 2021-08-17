@@ -20,6 +20,11 @@
   /* color: white; */
 }
 
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+
 .App-link {
   color: #61dafb;
 }
