@@ -16,6 +16,8 @@ import {
   VStack,
   Center,
   Spacer,
+  Button,
+  ButtonGroup,
 } from '@chakra-ui/react';
 import './Popup.css';
 import reflexerLogo from '../../assets/img/reflexer.finance.png';
@@ -57,6 +59,14 @@ const Popup = () => {
             <Stack>
               <img src={reflexer} alt="Reflexer"></img>
             </Stack>
+            <ButtonGroup>
+              <Button colorScheme="red" onClick={turnOFFToRAI}>
+                OFF
+              </Button>
+              <Button colorScheme="green" onClick={turnONToRAI}>
+                ON
+              </Button>
+            </ButtonGroup>
           </Box>
         </VStack>
       </Flex>
