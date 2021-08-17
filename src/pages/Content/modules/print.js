@@ -12,9 +12,21 @@ function replaceToRAI() {
   return result;
 }
 
-var result = replaceToRAI(); // undefined, the function does not return anything
-window.onload = result;
+let oldDOM = document.body.innerHTML;
 
+
+export const turnONToRAI = () => {
+  let result = replaceToRAI(); // undefined, the function does not return anything
+  window.onload = result; 
+  console.log('Extesion TurnON');
+}
+
+export const turnOFFToRAI = () => {
+  let result = oldDOM;
+  window.load = result;
+  console.log('Extesion Turn OFF');
+  
+}
 
 /*
 (function () {

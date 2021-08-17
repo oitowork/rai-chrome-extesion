@@ -20,6 +20,7 @@ import {
 import './Popup.css';
 import reflexerLogo from '../../assets/img/reflexer.finance.png';
 import reflexer from '../../assets/img/brand-white.svg';
+import { turnOFFToRAI, turnONToRAI } from '../Content/modules/print';
 
 const Popup = () => {
   return (
@@ -50,7 +51,7 @@ const Popup = () => {
             </Wrap>
             <Spacer />
             <Stack align="center" direction="row">
-              <Switch size="lg" colorScheme="#68D391" />
+              <Switch size="lg" colorScheme="green" onChange={turnOFFToRAI} />
             </Stack>
             <Spacer />
             <Stack>
