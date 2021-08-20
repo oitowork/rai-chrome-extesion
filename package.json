@@ -36,6 +36,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-hot-loader": "^4.13.0",
+    "react-icon": "^1.0.0",
+    "react-icons": "^4.2.0",
     "webpack-compiler-plugin": "^1.1.5"
   },
   "devDependencies": {

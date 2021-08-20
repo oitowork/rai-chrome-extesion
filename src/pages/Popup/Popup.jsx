@@ -19,6 +19,7 @@ import {
   SimpleGrid,
   Button,
   ButtonGroup,
+  IconButton,
 } from '@chakra-ui/react';
 import './Popup.css';
 import reflexerLogo from '../../assets/img/reflexer.finance.png';
@@ -26,10 +27,15 @@ import reflexer from '../../assets/img/brand-white.svg';
 import { turnOFFToRAI, turnONToRAI } from '../Content/modules/print';
 
 const Popup = () => {
+  function Example() {
+    const { colorMode, toggleColorMode } = useColorMode();
+  }
   return (
-    <Center backgroundColor="#1010" py={9}>
+    <Center py={5}>
       <Flex>
         <VStack
+          background="#bdc7"
+          w="100%"
           borderRadius="3xl"
           borderColor="green.50"
           overflow="hidden"
@@ -39,13 +45,7 @@ const Popup = () => {
           justifyItems="center"
           marginTop="10px"
         >
-          <Box
-            marginLeft="auto"
-            marginRight="auto"
-            as="section"
-            py="10"
-            px={{ base: '4', md: '8' }}
-          >
+          <Box h="90%" as="section" py="10" px={{ base: '5', md: '9' }}>
             <Wrap>
               <SimpleGrid
                 marginLeft="auto"
@@ -84,11 +84,10 @@ const Popup = () => {
             <Spacer />
             <Stack marginLeft="auto" marginRight="auto" direction="row">
               <Switch
-                width="50%"
+                marginRight="auto"
+                marginLeft="auto"
                 marginTop="20px"
                 marginBottom="20px"
-                marginLeft="auto"
-                marginRight="auto"
                 className="switch"
                 size="lg"
                 colorScheme="#68D391"
@@ -100,14 +99,6 @@ const Popup = () => {
             <Stack align="center">
               <img src={reflexer} alt="Reflexer" width="70%"></img>
             </Stack>
-            <ButtonGroup>
-              <Button colorScheme="red" onClick={turnOFFToRAI}>
-                OFF
-              </Button>
-              <Button colorScheme="green" onClick={turnONToRAI}>
-                ON
-              </Button>
-            </ButtonGroup>
           </Box>
         </VStack>
       </Flex>
