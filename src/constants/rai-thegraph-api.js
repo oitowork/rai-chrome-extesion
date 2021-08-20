@@ -1,4 +1,4 @@
-async function fetchAllPricesInUSD() {
+export async function fetchAllPricesInUSD() {
     return {
         USD: 1,
         RAI: await fetchPriceRAI()
