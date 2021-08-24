@@ -4173,6 +4173,18 @@ dom-converter@^0.2:
   dependencies:
     utila "~0.4"
 
+dom-find-and-replace@^1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/dom-find-and-replace/-/dom-find-and-replace-1.4.3.tgz#bbf3c2abda0072aa769a65b022ce2b2d51aafbee"
+  integrity sha512-IIqOI810Y9EzyF5AX+Xwnn7v1pn0n6GnON9ChgmkEzLHhclFEai7SeyT+LP0pQin8YFCaBsDZGoHqOFdeuVLRw==
+  dependencies:
+    dom-node-type "1.1.1"
+
+dom-node-type@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/dom-node-type/-/dom-node-type-1.1.1.tgz#44114384deff08f820fdd330b485113d8d5fc874"
+  integrity sha512-ibHimVe9xskjOy2QKPzfysV62aJhAV2dWxiVXiK0MRP6MVRUWVtPTXfDBpNg2IoB1lyd/n0jprf+1gjQ6cdfGQ==
+
 dom-serializer@0:
   version "0.2.2"
   resolved "https://registry.npmjs.org/dom-serializer/-/dom-serializer-0.2.2.tgz"
