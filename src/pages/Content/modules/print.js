@@ -137,7 +137,7 @@ export const turnOn = async () => {
             const usdNumber = portion.text.replace(/[^\d,.-]|/g, '');
             // console.log(usdNumber);
             const oito = isNumberBetween0and1(usdNumber, raiValue, usdNumber);
-            return `${oito}`;
+            return `${oito} RAI`;
           },
         }
       );
